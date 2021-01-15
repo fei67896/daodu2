@@ -29,6 +29,7 @@ def smartguide_hotel_Q():
     content = tmpcontent.replace('\n', '')
     answer = readvec.getQ(content, vectors, Smartguide_hotel_queList, Smartguide_hotel_ansList)
     ##Log##
+    '''
     Logfile = open("Log/HistorySmartguide_hotel.txt", "a")
     Logfile.write(content)
     Logfile.write("\n")
@@ -38,6 +39,8 @@ def smartguide_hotel_Q():
     print(content)
     print(answer)
     print("#####################")
+    '''
+
     return json.dumps({'as': answer})
 
 
@@ -47,6 +50,7 @@ def smartguide_hotel_A():
     content = tmpcontent.replace('\n', '')
     answer = readvec.getA(content, vectors, Smartguide_hotel_queList, Smartguide_hotel_ansList)
     ##Log##
+    '''
     Logfile = open("Log/HistorySmartguide_hotel.txt", "a")
     Logfile.write(content)
     Logfile.write("\n")
@@ -56,6 +60,8 @@ def smartguide_hotel_A():
     print(content)
     print(answer)
     print("#####################")
+    '''
+
     return json.dumps({'as': answer})
 
 

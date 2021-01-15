@@ -1,6 +1,7 @@
 import jieba
 import numpy as np
 
+import app
 
 
 #本代码加入了太多vectors，其实不需要，但由于函数中参数的传递也仅仅为地址，故不影响速度
